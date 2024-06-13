@@ -1,0 +1,104 @@
+/*Reset et bases*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #2B2B2B;
+    color: #E0E0E0;
+    font-family:"Roboto";
+  }
+h1 {
+    font-family:"arial";
+    font-size: 36px;
+    color: #B3B3B3;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #fff;
+  }
+
+/*police et selection*/
+@font-face {
+    font-family: 'Pacifico';
+    src: local('Pacifico')
+  }
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto')
+  }
+  ::selection {
+    color: #000;
+    background: #FF2D43;
+  }
+  ::-moz-selection {
+    color: #000;
+    background: #FF2D43;
+  }
+
+a {
+  color: #B3B3B3;
+}
+
+.accueil-card {
+    height: 360px;
+    width: 360px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: -3px 3px 5px #818181;
+    }
+    .accueil-card h2 {
+      font-family:"arial";
+      color: #2B2B2B ;
+      /* -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: #000; */
+      height: 50px;
+      padding: 10px 0 0 0;
+      font-size: 24px;
+      border-radius: 20px 20px 0 0;
+      background-color:  #C0C0C0 ;
+      border-bottom: #2B2B2B 3px solid;
+      
+      }
+      .accueil-card-content {
+    display: flex;
+}
+.accueil-card img {
+    height: 300px;
+    width: 300px;
+    border-radius: 0 0 0 20px;
+}
+
+.accueil-caracts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    border-radius: 0 0 20px 0;
+    background-color: #404040;
+    border-left: #2B2B2B 3px solid;
+
+}
+.accueil-caracts-age, .accueil-caracts-nb, .accueil-caracts-time  {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #fff;
+}
+.fa-cake-candles, .fa-users, .fa-clock {
+    height: 30px;
+    width: 30px;
+    margin: 0px 0;
+    color: #FFB500;
+}
