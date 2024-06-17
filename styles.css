@@ -19,9 +19,9 @@ body {
   }
 h1 {
     font-size: 36px;
-    color: #B3B3B3;
-    -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #fff;
+    color: #FFB500;
+    /* -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #fff; */
   }
 
 h2 {
@@ -65,14 +65,22 @@ a {
     border-radius: 25px;
     box-shadow: -3px 3px 5px #818181;
     }
-    .accueil-card h2 {
-      height: 50px;
-      padding: 10px 0 0 0;
-      border-radius: 20px 20px 0 0;
-      background-color:  #C0C0C0 ;
-      border-bottom: #2B2B2B 3px solid;
-      
-      }
+    
+.accueil-card:hover {
+  transition: all 0.4s ease-in-out;
+  scale:1.1;
+  box-shadow: none;
+  border: 1px solid #FFB500;
+}
+
+.accueil-card h2 {
+  height: 50px;
+  padding: 10px 0 0 0;
+  border-radius: 20px 20px 0 0;
+  background-color:  #C0C0C0 ;
+  border-bottom: #2B2B2B 3px solid;
+  
+  }
       .accueil-card-content {
     display: flex;
 }
@@ -219,4 +227,30 @@ a {
     width: 350px;
     border-radius: 0 0 0 20px;
     margin: 0;
+}
+
+
+
+.alphabet-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.alphabet-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.alphabet-nav a:hover {
+  color: #000;
+  background-color: #C0C0C0;
 }
