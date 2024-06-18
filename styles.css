@@ -237,6 +237,29 @@ a {
 
 
 
+
+.return-button {
+  display: inline-block;
+  background: linear-gradient(to top right, #FFB500, 70%, #C0C0C0);
+  color: #2B2B2B;
+  padding: 10px 20px;
+  margin: 10px 0 20px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+  box-shadow: -3px 3px 5px #818181;
+}
+.return-button:hover {
+  box-shadow: none;
+  background: linear-gradient(to top right, #C0C0C0, 70%, #FFB500);
+}
+
+
+
+
 .alphabet-nav {
   display: flex;
   flex-wrap: wrap;
