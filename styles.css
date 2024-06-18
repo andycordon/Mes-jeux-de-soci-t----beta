@@ -238,6 +238,34 @@ a {
 
 
 
+.back-to-top {
+  position: fixed;
+  z-index: 2;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  color: #2B2B2B;
+  background-color: #C0C0C0;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 10px;
+  box-shadow: -3px 3px 5px #818181;
+  transition: all 0.3s, color 0.3s;
+  opacity: 0.6;
+}
+
+.back-to-top:hover {
+  background-color: #FFB500;
+  box-shadow: none;
+}
+
+
+
+
+
+
+
 .return-button {
   display: inline-block;
   background: linear-gradient(to top right, #FFB500, 70%, #C0C0C0);
