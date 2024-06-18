@@ -399,3 +399,55 @@ a {
     margin-left: 10px;
     color: #fff;
   }
+
+
+
+
+   /* Footer mobile*/
+   footer {
+    background-color: #404040;
+    border-top: 3px solid #FFB500;
+    color: #fff;
+  }
+  footer a {
+    color: #fff;
+  }
+  footer a:hover {
+    color: #FFB500;
+    transition: all 400ms ease-out;
+    transform: scale(1.1);
+  }
+  .fa-linkedin{
+    margin: 10px 0px 10px 10px;
+    font-size: 32px;
+  }
+  .fa-github{
+    margin: 10px 0px 10px 10px;
+    font-size: 32px;
+  }
+  .fa-discord {
+    margin: 10px 0 10px 12px;
+    font-size: 32px;
+  }
+  .fa-youtube {
+    margin: 10px 0 10px 12px;
+    font-size: 36px;
+  }
+  .pictoAlig{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer li a {
+    margin: 0 8px;
+    font-size: 14px;
+  }
+  .copyrigth {
+    font-size: 10px;
+    padding: 10px 0;
+  }
