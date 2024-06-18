@@ -31,7 +31,6 @@ h2 {
 }
 
 
-
 /*police et selection*/
 @font-face {
     font-family: 'Pacifico';
@@ -114,6 +113,14 @@ a {
 
 
 
+.index-title {
+  padding: 90px 0 0 0;
+}
+
+.alphabet-title {
+  color: #c0c0c0;
+  margin: 10px 0;
+}
 
 
 
