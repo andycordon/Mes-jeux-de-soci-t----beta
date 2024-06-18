@@ -41,11 +41,11 @@ h1 {
     src: local('Roboto')
   }
   ::selection {
-    color: #000;
+    color: #2B2B2B;
     background: #FFB500;
   }
   ::-moz-selection {
-    color: #000;
+    color: #2B2B2B;
     background: #FFB500;
   }
 
@@ -115,7 +115,7 @@ a {
 
 
 
-.index-title {
+.title {
   padding: 90px 0 0 0;
 }
 .alphabet-title {
@@ -123,10 +123,6 @@ a {
 }
 
 
-
-.alphabet-nav {
-  padding-top: px;
-}
 
 
 
@@ -246,7 +242,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 5px;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .alphabet-nav a {
@@ -261,7 +257,7 @@ a {
 }
 
 .alphabet-nav a:hover {
-  color: #000;
+  color: #2B2B2B;
   background-color: #C0C0C0;
 }
 
@@ -300,7 +296,7 @@ a {
 .buttonMenu span {
   height: 3px;
   width: 100%;
-  background: #000;
+  background: #2B2B2B;
   display: inline-block;
   transition: all 0.5s cubic-bezier(0.62, 0.43, 0.35, 1.47);
 }
@@ -311,7 +307,7 @@ a {
 }
 
 #check:checked + .buttonMenu span {
-  background: #000;
+  background: #2B2B2B;
 }
 
 #check:checked + .buttonMenu span:nth-child(1) {
