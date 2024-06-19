@@ -1,232 +1,244 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="./img/mysterium.jpg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Arial" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>Accueil - Mes jeux de société</title>
-    <meta name="description" content="Découvrez tous mes jeux de société par catégorie, âge, nombre de joueurs, temps de partie, mes coups de coeur et galerie. Il y en a pour tous le monde !">
-</head>
-<body>
-    <header>
-        <a href="./index.html">
-          <img
-            class="logo"
-            src="./img/mysterium.jpg"
-            alt="Logo de Mes jeux de société" loading="eager"
-          >
-          <p>Mes Jeux de Société</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Arial" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <title>Accueil - Mes jeux de société</title>
+        <meta name="description" content="Découvrez tous mes jeux de société par catégorie, âge, nombre de joueurs, temps de partie, mes coups de coeur et galerie. Il y en a pour tous le monde !">
+    </head>
+    <body>
+        <header>
+            <a href="./index.html">
+            <img
+                class="logo"
+                src="./img/logo.png"
+                alt="Logo de Mes jeux de société" loading="eager"
+            >
+            <p>Mes Jeux de Société</p>
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="buttonMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+            </label>
+            <nav>
+                <a class="menu-active" href="index.html">Accueil</a>
+                <a href="categorie.html">Catégories de jeu</a>
+                <a href="age.html">Âge minimum</a>
+                <a href="nombre.html">Nombre de joueurs</a>
+                <a href="temps.html">Temps de partie</a>
+                <a href="coups-de-coeur.html">Mes coups de cœur</a>
+                <a href="galerie.html">Ma galerie</a>
+            </nav>          
+        </header>
+        <h1 id="top" class="title">Tous les jeux</h1>
+        <a href="#top" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
         </a>
-        <input type="checkbox" id="check">
-        <label for="check" class="buttonMenu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <nav>
-            <a class="menu-active" href="index.html">Accueil</a>
-            <a href="categorie.html">Catégories de jeu</a>
-            <a href="age.html">Âge minimum</a>
-            <a href="nombre.html">Nombre de joueurs</a>
-            <a href="temps.html">Temps de partie</a>
-            <a href="coups-de-coeur.html">Mes coups de cœur</a>
-            <a href="galerie.html">Ma galerie</a>
-          </nav>          
-      </header>
-      <a href="#top" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-      </a>
-      <h1 id="top" class="title">Tous les jeux</h1>
-        <div class="alphabet-nav">
-            <a href="#A">A</a>
-            <a href="#B">B</a>
-            <a href="#C">C</a>
-            <a href="#D">D</a>
-            <a href="#E">E</a>
-            <a href="#F">F</a>
-            <a href="#G">G</a>
-            <a href="#H">H</a>
-            <a href="#I">I</a>
-            <a href="#J">J</a>
-            <a href="#K">K</a>
-            <a href="#L">L</a>
-            <a href="#M">M</a>
-            <a href="#N">N</a>
-            <a href="#O">O</a>
-            <a href="#P">P</a>
-            <a href="#Q">Q</a>
-            <a href="#R">R</a>
-            <a href="#S">S</a>
-            <a href="#T">T</a>
-            <a href="#U">U</a>
-            <a href="#V">V</a>
-            <a href="#W">W</a>
-            <a href="#X">X</a>
-            <a href="#Y">Y</a>
-            <a href="#Z">Z</a>
+            <div class="alphabet-nav">
+                <a href="#A">A</a>
+                <a href="#B">B</a>
+                <a href="#C">C</a>
+                <a href="#D">D</a>
+                <a href="#E">E</a>
+                <a href="#F">F</a>
+                <a href="#G">G</a>
+                <a href="#H">H</a>
+                <a href="#I">I</a>
+                <a href="#J">J</a>
+                <a href="#K">K</a>
+                <a href="#L">L</a>
+                <a href="#M">M</a>
+                <a href="#N">N</a>
+                <a href="#O">O</a>
+                <a href="#P">P</a>
+                <a href="#Q">Q</a>
+                <a href="#R">R</a>
+                <a href="#S">S</a>
+                <a href="#T">T</a>
+                <a href="#U">U</a>
+                <a href="#V">V</a>
+                <a href="#W">W</a>
+                <a href="#X">X</a>
+                <a href="#Y">Y</a>
+                <a href="#Z">Z</a>
+            </div>
+
+            <h2 id="A" class="alphabet-title">Les jeux en 'A'</h2>
+            <div class="cards">
+                <div class="accueil-card">
+                    <a href="./games/game-mysterium.html">
+                        <h2>Aysterium</h2>
+                        <div class="accueil-card-content">
+                            <img src="./img/mysterium.jpg" alt="Photo de la boite du jeu X, de Mes Jeux de Société">
+                            <div class="accueil-caracts">
+                                <div class="accueil-caracts-age">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                    <p>10+</p>
+                                </div>
+                                <div class="accueil-caracts-nb">
+                                    <i class="fa-solid fa-users"></i>
+                                    <p>2 - 7</p>
+                                </div>
+                                <div class="accueil-caracts-time">
+                                    <i class="fa-solid fa-clock"></i>
+                                <p>42''</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="accueil-card">
+                <a href="./games/game-mysterium.html">
+                    <h2>Aysterium</h2>
+                    <div class="accueil-card-content">
+                        <img src="./img/mysterium.jpg" alt="Photo de la boite du jeu X, de Mes Jeux de Société">
+                        <div class="accueil-caracts">
+                            <div class="accueil-caracts-age">
+                                <i class="fa-solid fa-cake-candles"></i>
+                                <p>10+</p>
+                            </div>
+                            <div class="accueil-caracts-nb">
+                                <i class="fa-solid fa-users"></i>
+                                <p>2 - 7</p>
+                            </div>
+                            <div class="accueil-caracts-time">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>42''</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="accueil-card">
+                <a href="./games/game-mysterium.html">
+                    <h2>Aysterium</h2>
+                    <div class="accueil-card-content">
+                        <img src="./img/mysterium.jpg" alt="Photo de la boite du jeu X, de Mes Jeux de Société">
+                        <div class="accueil-caracts">
+                            <div class="accueil-caracts-age">
+                                <i class="fa-solid fa-cake-candles"></i>
+                                <p>10+</p>
+                            </div>
+                            <div class="accueil-caracts-nb">
+                                <i class="fa-solid fa-users"></i>
+                                <p>2 - 7</p>
+                            </div>
+                            <div class="accueil-caracts-time">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>42''</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <h2 id="A" class="alphabet-title">Les jeux en 'A'</h2>
-        <div class="accueil-card">
-            <a href="./games/game-test.html">
-                <h2>Aysterium</h2>
-                <div class="accueil-card-content">
-                    <img src="./img/mysterium.jpg" alt="Photo de la boite du jeu X, de Mes Jeux de Société">
-                    <div class="accueil-caracts">
-                        <div class="accueil-caracts-age">
-                            <i class="fa-solid fa-cake-candles"></i>
-                            <p>10+</p>
+            
+            <h2 id="B" class="alphabet-title">Les jeux en 'B'</h2>
+            <div class="cards">
+                <div class="accueil-card">
+                    <a href="./games/game-mysterium.html">
+                        <h2>Bysterium</h2>
+                        <div class="accueil-card-content">
+                            <img src="./img/mysterium.jpg" alt="Photo de la boite du jeu X, de Mes Jeux de Société">
+                            <div class="accueil-caracts">
+                                <div class="accueil-caracts-age">
+                                    <i class="fa-solid fa-cake-candles"></i>
+                                    <p>10+</p>
+                                </div>
+                                <div class="accueil-caracts-nb">
+                                    <i class="fa-solid fa-users"></i>
+                                    <p>2 - 7</p>
+                                </div>
+                                <div class="accueil-caracts-time">
+                                    <i class="fa-solid fa-clock"></i>
+                                    <p>42''</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="accueil-caracts-nb">
-                            <i class="fa-solid fa-users"></i>
-                            <p>2 - 7</p>
-                        </div>
-                        <div class="accueil-caracts-time">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>42''</p>
+                    </a>
+                </div>
+            </div>
+
+            <h2 id="C" class="alphabet-title">Les jeux en 'C'</h2>
+            <div class="cards">
+                <div class="accueil-card">
+                    <a href="./games/game-mysterium.html">
+                        <h2>Cysterium</h2>
+                        <div class="accueil-card-content">
+                            <img src="./img/mysterium.jpg" alt="Photo de la boite du jeu X, de Mes Jeux de Société">
+                        <div class="accueil-caracts">
+                            <div class="accueil-caracts-age">
+                                <i class="fa-solid fa-cake-candles"></i>
+                                <p>10+</p>
+                            </div>
+                            <div class="accueil-caracts-nb">
+                                <i class="fa-solid fa-users"></i>
+                                <p>2 - 7</p>
+                            </div>
+                            <div class="accueil-caracts-time">
+                                <i class="fa-solid fa-clock"></i>
+                                <p>42''</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="accueil-card">
-            <a href="./games/game-test.html">
-                <h2>Aysterium</h2>
-                <div class="accueil-card-content">
-                    <img src="./img/mysterium.jpg" alt="Photo de la boite du jeu X, de Mes Jeux de Société">
-                    <div class="accueil-caracts">
-                        <div class="accueil-caracts-age">
-                            <i class="fa-solid fa-cake-candles"></i>
-                            <p>10+</p>
-                        </div>
-                        <div class="accueil-caracts-nb">
-                            <i class="fa-solid fa-users"></i>
-                            <p>2 - 7</p>
-                        </div>
-                        <div class="accueil-caracts-time">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>42''</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="accueil-card">
-            <a href="./games/game-test.html">
-                <h2>Aysterium</h2>
-                <div class="accueil-card-content">
-                    <img src="./img/mysterium.jpg" alt="Photo de la boite du jeu X, de Mes Jeux de Société">
-                    <div class="accueil-caracts">
-                        <div class="accueil-caracts-age">
-                            <i class="fa-solid fa-cake-candles"></i>
-                            <p>10+</p>
-                        </div>
-                        <div class="accueil-caracts-nb">
-                            <i class="fa-solid fa-users"></i>
-                            <p>2 - 7</p>
-                        </div>
-                        <div class="accueil-caracts-time">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>42''</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
+                </a>
+            </div>
         </div>
 
-        <h2 id="B" class="alphabet-title">Les jeux en 'B'</h2>
-        <div class="accueil-card">
-            <a href="./games/game-test.html">
-                <h2>Bysterium</h2>
-                <div class="accueil-card-content">
-                    <img src="./img/mysterium.jpg" alt="Photo de la boite du jeu X, de Mes Jeux de Société">
-                    <div class="accueil-caracts">
-                        <div class="accueil-caracts-age">
-                            <i class="fa-solid fa-cake-candles"></i>
-                            <p>10+</p>
-                        </div>
-                        <div class="accueil-caracts-nb">
-                            <i class="fa-solid fa-users"></i>
-                            <p>2 - 7</p>
-                        </div>
-                        <div class="accueil-caracts-time">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>42''</p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+    <!-- Zone du footer -->
+    <footer>
+        <div>
 
-        <h2 id="C" class="alphabet-title">Les jeux en 'C'</h2>
-        <div class="accueil-card">
-            <a href="./games/game-test.html">
-                <h2>Cysterium</h2>
-                <div class="accueil-card-content">
-                    <img src="./img/mysterium.jpg" alt="Photo de la boite du jeu X, de Mes Jeux de Société">
-                    <div class="accueil-caracts">
-                        <div class="accueil-caracts-age">
-                            <i class="fa-solid fa-cake-candles"></i>
-                            <p>10+</p>
-                        </div>
-                        <div class="accueil-caracts-nb">
-                            <i class="fa-solid fa-users"></i>
-                            <p>2 - 7</p>
-                        </div>
-                        <div class="accueil-caracts-time">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>42''</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="pictoAlig">
+                <p>
+                    Rejoins moi sur
+                </p>
+                <a
+                href="https://www.linkedin.com/in/andycordon/" aria-label="Venez visiter mon Linkedin"
+                target="_blank"
+                >
+                <i class="fa-brands fa-linkedin"></i>
             </a>
-        </div>
-  <!-- Zone du footer -->
-  <footer>
-    <div class="pictoAlig">
-      Rejoins moi sur 
-      <!-- linkedin - github - discord - youtube -->
-        <a
-          href="https://www.linkedin.com/in/andycordon/" aria-label="Venez visiter mon Linkedin"
-          target="_blank"
-        >
-          <i class="fa-brands fa-linkedin"></i>
+            <a
+            href="https://github.com/andycordon" aria-label="Venez visiter mon Github"
+            target="_blank"
+            >
+            <i class="fa-brands fa-github"></i>
         </a>
         <a
-          href="https://github.com/andycordon" aria-label="Venez visiter mon Github"
-          target="_blank"
-        >
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a
-          href="https://discord.gg/Zq8FHaVha6" aria-label="Venez visiter mon Discord"
-          target="_blank"
+        href="https://discord.gg/Zq8FHaVha6" aria-label="Venez visiter mon Discord"
+        target="_blank"
         >
         <i class="fa-brands fa-discord"></i>
-        <a
-          href="https://www.youtube.com/channel/UCw5LuVbpxiEegMqOZeWNyJQ" aria-label="Venez visiter mon Youtube"
-          target="_blank"
-        >
-          <i class="fa-brands fa-youtube"></i>
-        </a>
-      </a>
-      </div>
-      <ul>
-        <li><a class="menu-active" href="index.html">Accueil</a></li> -
-        <li><a href="categorie.html">Catégories de jeu</a></li> -
-        <li><a href="age.html">Âge minimum</a></li> -
-        <li><a href="nombre.html">Nombre de joueurs</a></li> -
-        <li><a href="temps.html">Temps de partie</a></li> -
-        <li><a href="coups-de-coeur.html">Mes coups de cœur</a></li> -
-        <li><a href="galerie.html">Ma galerie</a></li>
-      </ul>
-      <p class="copyrigth">
-        Version 1.0 - Mes Jeux de Société ©2024 - Par Andy Cordon
-      </p>
-    </footer>
-    <script async src="https://kit.fontawesome.com/325ecb5913.js" crossorigin="anonymous"></script>
+    </a>
+    <a
+    href="https://www.youtube.com/channel/UCw5LuVbpxiEegMqOZeWNyJQ" aria-label="Venez visiter mon Youtube"
+    target="_blank"
+    >
+    <i class="fa-brands fa-youtube"></i>
+</a>
+</div>
+<ul>
+    <li><a class="menu-active" href="index.html">Accueil</a></li>
+    <li><a href="categorie.html">Catégories de jeu</a></li>
+    <li><a href="age.html">Âge minimum</a></li>
+    <li><a href="nombre.html">Nombre de joueurs</a></li>
+    <li><a href="temps.html">Temps de partie</a></li>
+    <li><a href="coups-de-coeur.html">Mes coups de cœur</a></li>
+    <li><a href="galerie.html">Ma galerie</a></li>
+</ul>
+<p class="copyrigth">
+    Version 1.0 - Mes Jeux de Société ©2024 - Par Andy Cordon
+</p>
+</div>
+</footer>
+<script async src="https://kit.fontawesome.com/325ecb5913.js" crossorigin="anonymous"></script>
 </body>
 </html>
