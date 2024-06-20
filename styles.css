@@ -433,8 +433,19 @@ footer li a {
 
 /*Tab style*/
 @media (min-width: 768px) {
+/*Tab Elements Bases*/
+/*Tab Header*/
+  header {
+    position: relative;
+  }
 
 /*Tab Accueil Page*/
+/*Tab title h1*/
+.title {
+  padding: 0;
+  margin-top: -70px;
+}
+
 /*Tab Section h2 Title*/
 .alphabet-title {
   margin-bottom: 10px;
@@ -531,7 +542,68 @@ footer li a {
 
   /*Desktop style*/
   @media (min-width: 1024px) {
+  .buttonMenu {
+    display: none;
+    position: absolute;
+  }
+  .logo {
+    width: 150px;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    top:0
+  }
 
+  header {
+    height: 200px;
+    border: none;
+  }
+  header a {
+    width: 100%;
+  }
+  header p {
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: -50px;
+  }
+  /*Desk barre de menu*/
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:170px 0 0 0;
+    padding: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+  }
+  nav a {
+    opacity: 1;
+    transform: scale(1);
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #C0C0C0;
+    background-color: #FFB500;
+    color: #2B2B2B;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 8px 0px;
+    margin: 0 5px;
+    box-shadow: -3px 3px 5px #818181;
+
+  }
+  nav a:hover {
+    background-color: #c0c0c0;
+    border: 1px solid #2B2B2B;
+    box-shadow: none;
+  }
+  .menu-active {
+    background-color: #2B2B2B;
+    color: #FFB500;
+    box-shadow: none; 
+  }
     
     
     
