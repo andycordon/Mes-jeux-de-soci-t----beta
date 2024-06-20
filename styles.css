@@ -639,3 +639,8 @@ footer li a {
   }
 
 
+.galerie img {
+  width: 50%;
+  margin: 10px;
+  border-radius: 20px;
+}
