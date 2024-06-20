@@ -278,7 +278,7 @@ footer li a {
 }
 .accueil-card:hover {
   transition: all 0.4s ease-in-out;
-  scale:1.05;
+  scale:1.02;
   box-shadow: none;
   border: 1px solid #FFB500;
 }
@@ -605,9 +605,31 @@ footer li a {
     box-shadow: none; 
   }
     
+
+  /*Desk Alphabet Nav*/
+.alphabet-nav {
+  margin: 10px 10px -20px 10px;
+}
+
+
+/*Section h2 Title*/
+.alphabet-title {
+  padding-top: 50px;
+}
     
+
+/*Accueil Cards*/
+.accueil-card {
+  height: 340px;
+  width: 340px;
+}
+.accueil-card img {
+  height: 285px;
+  width: 285px;
+}
+
     
-    
+    /*Desk footer*/
     footer {
     position: absolute;
     left: 0;
