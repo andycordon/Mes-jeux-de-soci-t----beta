@@ -1,4 +1,3 @@
-
 /*Reset et bases*/
 *,
 ::before,
@@ -107,7 +106,7 @@ header a p {
   z-index: 201;
   border: 1px solid #c0c0c0;
   border-radius: 15px;
-  box-shadow: -3px 3px 5px #818181;
+  box-shadow: -3px 3px 10px #818181;
 }
 .buttonMenu span {
   height: 3px;
@@ -232,6 +231,12 @@ footer li a {
 }
 
 
+
+
+
+
+
+
 /*Accueil Page*/
 /*Accueil Title*/
 .title {
@@ -273,7 +278,7 @@ footer li a {
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    box-shadow: -3px 3px 5px #818181;
+    box-shadow: -3px 3px 10px #818181;
     margin: 15px auto;
 }
 .accueil-card:hover {
@@ -289,6 +294,7 @@ footer li a {
   background-color:  #C0C0C0;
   color: #2b2b2b;
   border-bottom: #2B2B2B 3px solid;
+  font-size: 22px;
 }
 .accueil-card-content {
     display: flex;
@@ -331,7 +337,7 @@ footer li a {
   height: 35px;
   line-height: 35px;
   border-radius: 10px;
-  box-shadow: -3px 3px 5px #818181;
+  box-shadow: -3px 3px 10px #818181;
   transition: all 0.3s, color 0.3s;
   opacity: 0.6;
 }
@@ -347,7 +353,7 @@ footer li a {
   width: 360px;
   margin: 10px auto;
   border-radius: 25px;
-  box-shadow: -3px 3px 5px #818181;
+  box-shadow: -3px 3px 10px #818181;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -403,7 +409,7 @@ footer li a {
   border: none;
   border-radius: 10px;
   transition: all 0.3s ease-in;
-  box-shadow: -3px 3px 5px #818181;
+  box-shadow: -3px 3px 10px #818181;
 }
 .return-button:hover {
   box-shadow: none;
@@ -417,12 +423,13 @@ footer li a {
 
 
 
-
-
-
-
-
-
+/*Gallerie Page*/
+/*Images gallerie*/
+.galerie img {
+  width: 50%;
+  margin: 10px;
+  border-radius: 20px;
+}
 
 
 
@@ -435,9 +442,9 @@ footer li a {
 @media (min-width: 768px) {
 /*Tab Elements Bases*/
 /*Tab Header*/
-  header {
-    position: relative;
-  }
+header {
+  position: relative;
+}
 
 /*Tab Accueil Page*/
 /*Tab title h1*/
@@ -515,110 +522,89 @@ footer li a {
 
 
 
+/*Desktop style*/
+@media (min-width: 1024px) {
+/*Desk Elements Bases*/
+/*Desk footer*/
+.buttonMenu {
+  display: none;
+  position: absolute;
+}
+header {
+  height: 200px;
+  border: none;
+}
+header a {
+  width: 100%;
+}
+header p {
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: -50px;
+}
+.logo {
+  width: 150px;
+  padding: 5px;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  top:0
+}
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /*Desktop style*/
-  @media (min-width: 1024px) {
-  .buttonMenu {
-    display: none;
-    position: absolute;
-  }
-  .logo {
-    width: 150px;
-    padding: 5px;
-    border-radius: 20px;
-    position: absolute;
-    left: 0;
-    top:0
-  }
-
-  header {
-    height: 200px;
-    border: none;
-  }
-  header a {
-    width: 100%;
-  }
-  header p {
-    font-size: 40px;
-    font-weight: 900;
-    margin-top: -50px;
-  }
-  /*Desk barre de menu*/
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin:170px 0 0 0;
-    padding: 0;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 2;
-  }
-  nav a {
-    opacity: 1;
-    transform: scale(1);
-    display: block;
-    border-radius: 10px;
-    border: 1px solid #C0C0C0;
-    background-color: #FFB500;
-    color: #2B2B2B;
-    font-weight: 600;
-    font-size: 15px;
-    padding: 8px 0px;
-    margin: 0 5px;
-    box-shadow: -3px 3px 5px #818181;
-
-  }
-  nav a:hover {
-    background-color: #c0c0c0;
-    border: 1px solid #2B2B2B;
-    box-shadow: none;
-  }
-  .menu-active {
-    background-color: #2B2B2B;
-    color: #FFB500;
-    box-shadow: none; 
-  }
+/*Desk barre de menu*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin:170px 0 0 0;
+  padding: 0;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 2;
+}
+nav a {
+  opacity: 1;
+  transform: scale(1);
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #C0C0C0;
+  background-color: #FFB500;
+  color: #2B2B2B;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 0px;
+  margin: 0 5px;
+  box-shadow: -3px 3px 10px #818181;
+}
+nav a:hover {
+  background-color: #c0c0c0;
+  border: 1px solid #2B2B2B;
+  box-shadow: none;
+}
+.menu-active {
+  background-color: #2B2B2B;
+  color: #FFB500;
+  box-shadow: none; 
+}
     
-
-  /*Desk Alphabet Nav*/
+/*Desk Accueil Page*/
+/*Desk Alphabet Nav*/
 .alphabet-nav {
   margin: 10px 10px -20px 10px;
 }
 
-
-/*Section h2 Title*/
+/*Desk Section h2 Title*/
 .alphabet-title {
   padding-top: 50px;
-}
-    
+}    
 
-/*Accueil Cards*/
+/*Desk Accueil Cards*/
 .accueil-card {
   height: 340px;
   width: 340px;
@@ -628,19 +614,75 @@ footer li a {
   width: 285px;
 }
 
-    
-    /*Desk footer*/
-    footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    }
-  /*End desk*/       
-  }
 
-
-.galerie img {
-  width: 50%;
-  margin: 10px;
-  border-radius: 20px;
+/*Desk Game Page*/
+/*Desk Game Card*/
+.game-card {
+  width: 995px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.game-card h2 {
+  height: 60px;
+  line-height: 60px;
+  width: 485px;
+  position: absolute;
+  margin: -930px 0px 0 -500px;
+  border-radius: 20px 0 0 0;
+}
+.top-desc {
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  width: 985px;
+  height: 495px;
+}
+.game-card .game-caracts {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 430px;
+  width: 485px;
+  padding-top: 20px;
+  margin: 65px 5px 0 0px;
+}
+.game-card .game-numbers {
+  display: flex;
+  flex-direction: row;
+}
+.game-card .descriptif {
+  width: 485px;
+  height: 290px;
+  position: absolute;
+  margin: -295px 0px 0 0px;
+  border-radius: 0;
+}
+.game-card img {
+  height: 495px;
+  width: 495px;
+  border-radius: 0 20px 0 0;
+  margin: 0 0px 0 0;
+}
+.bottom-desc {
+  width: 985px;
+  height: 495px;
+  margin:0px;
+  border-radius: 0;
+}
+.game-card iframe {
+  height: 490px;
+  width: 985px;
+  border-radius: 0 0 20px 20px;
+  margin:0px;
+}
+/*End desk*/       
+}
+
+
+
+
+
+
