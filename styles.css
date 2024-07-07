@@ -347,6 +347,32 @@ footer li a {
 }
 
 
+/*Categorie Page*/
+/*Alphabet Nav Adapt*/
+.alphabet-nav-adapt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px 10px -50px 10px;
+}
+.alphabet-nav-adapt a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+  width: 100%x;
+  height: 30px;
+  padding: 0 10px;
+}
+.alphabet-nav-adapt a:hover {
+  color: #2B2B2B;
+  background-color: #C0C0C0;
+}
+
+
 /*Game Page*/
 /*Game Cards*/
 .game-card {
