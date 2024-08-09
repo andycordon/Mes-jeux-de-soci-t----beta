@@ -435,16 +435,25 @@ footer li a {
   font-weight: bold;
   border: none;
   border-radius: 10px;
+  transition: all 0.3s ease-in;
   box-shadow: -3px 3px 10px #818181;
   }
   .return-button:hover {
     box-shadow: none;
     background: linear-gradient(to top right, #C0C0C0, 70%, #FFB500);
-    transition: all 0.3s ease-in;
 }
 
+/*link-game-card*/
+.game-card-link {
+  color: #FFB500;
+  text-decoration: underline;
+  transition: all 0.3s ease-in;
 
-
+}
+.game-card-link:hover {
+  color: #C0C0C0;
+  text-decoration: none;
+}
 
 
 
